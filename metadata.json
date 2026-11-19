@@ -1,0 +1,6 @@
+{
+  "name": "TechFlow WMS — Technical Department Workload Monitoring",
+  "description": "Internal manufacturing engineering workload monitoring system tracking requests across Samples, Quotation, Approval, APQP, Tooling, CNC, MD, TRF, and O.B.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
