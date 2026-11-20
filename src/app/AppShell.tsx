@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import {
   CalendarDays,
+  CheckCircle2,
   CheckSquare,
   ClipboardList,
   Cog,
@@ -56,6 +57,7 @@ export function AppShell() {
     { to: '/md', label: 'MD', icon: FileCheck2, badge: 0 },
     { to: '/trf', label: 'TRF Log', icon: Wrench, badge: overdue.trf_logs },
     { to: '/ob', label: 'O.B.', icon: CalendarDays, badge: 0 },
+    { to: '/completed', label: 'Completed', icon: CheckCircle2, badge: 0 },
   ];
 
   const handleRsqdfSubmit = (e: React.FormEvent) => {

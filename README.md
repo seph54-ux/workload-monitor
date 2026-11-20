@@ -77,17 +77,23 @@ Use the **Lookup RSQDF...** search bar at the top of any screen (or click any RS
 - Shows every linked record for that RSQDF in one place: Quotation → Samples → Approval → APQP → Tooling & CNC → TRF Revisions.
 - **Drawings & Documents**: Attach PDFs or images (quotations, signed approvals, FRRD drawings). Attached files can be **downloaded**, **edited** (renamed or replaced with a newer file), or **removed**.
 
-### 4. O.B. (Official Business)
+### 4. Completed / Done Items
+A dedicated archive tab collecting all finished records across **Samples**, **Quotation**, **Approval**, **APQP**, **Tooling**, **CNC**, and **TRF Log**, organized by category:
+- **Categorized Views**: Filter by category or view items grouped under each stage header (`By Category` or `All Table`), search by RSQDF/customer/model, and export to Excel.
+- **Re-Check & Edit Status**: Open any completed item's RSQDF timeline to review details and drawings, edit its completion details, or choose **Reopen / For Revision** to move it back to active monitoring.
+- **Quick TRF Filing**: File a new **TRF Revision** directly from any completed item if a drawing or tooling change is needed.
+
+### 5. O.B. (Official Business)
 Tracks field visits and customer trips with two ways to view the schedule:
 - **Table View**: Filterable list of upcoming and past trips with dates, departure/arrival times, customers, and assigned technicians.
 - **Calendar View**: Monthly calendar layout to spot scheduling overlaps and upcoming field visits at a glance.
 
-### 5. Excel Import & Export
+### 6. Excel Import & Export
 Every stage table supports working with spreadsheets:
 - **Export**: Download the current table view as an `.xlsx` Excel file.
 - **Import**: Upload an existing `.xlsx` or `.csv` file, match spreadsheet columns to system fields, review validation errors in a dry-run preview, and import valid rows in bulk.
 
-### 6. Admin Console (Admin Role Only)
+### 7. Admin Console (Admin Role Only)
 - **Technicians**: Add, rename, or deactivate Technical In Charge roster members (the dropdown list used across all stages).
 - **Audit Trail**: View a read-only history of changes made across records and attachments.
 

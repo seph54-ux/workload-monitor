@@ -136,6 +136,30 @@ export function useUpdateStageRow<T extends { id: string }>(table: StageTableNam
   });
 }
 
+export function useUpdateCompletedItemStatus() {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: ({
+      table,
+      id,
+      payload,
+    }: {
+      table: StageTableName;
+      id: string;
+      rsqdf: string;
+      payload: Record<string, unknown>;
+    }) => updateStageRow(table, id, payload),
+    onSuccess: (_data, variables) => {
+      void qc.invalidateQueries({ queryKey: QUERY_KEYS.stage(variables.table) });
+      void qc.invalidateQueries({ queryKey: QUERY_KEYS.mdSummary });
+      void qc.invalidateQueries({ queryKey: QUERY_KEYS.auditLogs });
+      if (variables.rsqdf) {
+        void qc.invalidateQueries({ queryKey: QUERY_KEYS.timeline(variables.rsqdf) });
+      }
+    },
+  });
+}
+
 export function useSoftDeleteStageRow(table: StageTableName) {
   const qc = useQueryClient();
   return useMutation({

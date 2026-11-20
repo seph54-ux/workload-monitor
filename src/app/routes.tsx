@@ -10,6 +10,7 @@ import { CncPage } from '../features/cnc/CncPage';
 import { MdPage } from '../features/md/MdPage';
 import { TrfPage } from '../features/trf/TrfPage';
 import { ObPage } from '../features/ob/ObPage';
+import { CompletedPage } from '../features/completed/CompletedPage';
 import { TimelinePage } from '../features/timeline/TimelinePage';
 import { AdminPage } from '../features/admin/AdminPage';
 
@@ -28,6 +29,7 @@ export function AppRoutes() {
           <Route path="/md" element={<MdPage />} />
           <Route path="/trf" element={<TrfPage />} />
           <Route path="/ob" element={<ObPage />} />
+          <Route path="/completed" element={<CompletedPage />} />
           <Route path="/item/:rsqdf" element={<TimelinePage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
